@@ -1,0 +1,30 @@
+C:\Users\User\source\repos\Megah Motor Label\bin\Debug\Megah Motor Label.exe.config
+C:\Users\User\source\repos\Megah Motor Label\bin\Debug\Megah Motor Label.exe
+C:\Users\User\source\repos\Megah Motor Label\bin\Debug\Megah Motor Label.pdb
+C:\Users\User\source\repos\Megah Motor Label\obj\Debug\Megah_Motor_Label.Properties.Resources.resources
+C:\Users\User\source\repos\Megah Motor Label\obj\Debug\Megah Motor Label.csproj.GenerateResource.cache
+C:\Users\User\source\repos\Megah Motor Label\obj\Debug\Megah Motor Label.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\Megah Motor Label\obj\Debug\Megah Motor Label.exe
+C:\Users\User\source\repos\Megah Motor Label\obj\Debug\Megah Motor Label.pdb
+C:\Users\User\source\repos\Megah Motor Label\obj\Debug\Megah_Motor_Label.frmMain.resources
+C:\Users\User\source\repos\Megah Motor Label\bin\Debug\SdkApi.Core.dll
+C:\Users\User\source\repos\Megah Motor Label\bin\Debug\SdkApi.Desktop.dll
+C:\Users\User\source\repos\Megah Motor Label\bin\Debug\SdkApi.Desktop.Usb.dll
+C:\Users\User\source\repos\Megah Motor Label\bin\Debug\Newtonsoft.Json.dll
+C:\Users\User\source\repos\Megah Motor Label\bin\Debug\SharpSnmpLib.dll
+C:\Users\User\source\repos\Megah Motor Label\bin\Debug\Csv.dll
+C:\Users\User\source\repos\Megah Motor Label\bin\Debug\FluentFTP.dll
+C:\Users\User\source\repos\Megah Motor Label\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\User\source\repos\Megah Motor Label\bin\Debug\Windows.winmd
+C:\Users\User\source\repos\Megah Motor Label\bin\Debug\System.Runtime.WindowsRuntime.dll
+C:\Users\User\source\repos\Megah Motor Label\bin\Debug\SdkApi.Core.pdb
+C:\Users\User\source\repos\Megah Motor Label\bin\Debug\SdkApi.Core.xml
+C:\Users\User\source\repos\Megah Motor Label\bin\Debug\SdkApi.Desktop.pdb
+C:\Users\User\source\repos\Megah Motor Label\bin\Debug\SdkApi.Desktop.xml
+C:\Users\User\source\repos\Megah Motor Label\bin\Debug\SdkApi.Desktop.Usb.pdb
+C:\Users\User\source\repos\Megah Motor Label\obj\Debug\Megah Motor Label.csprojAssemblyReference.cache
+C:\Users\User\source\repos\Megah Motor Label\obj\Debug\Megah Motor Label.csproj.CopyComplete
+C:\Users\User\source\repos\Megah Motor Label\bin\Debug\ChnCharInfo.dll
+C:\Users\User\source\repos\Megah Motor Label\bin\Debug\ChnCharInfo.resources.dll
+C:\Users\User\source\repos\Megah Motor Label\bin\Debug\ChnCharInfo.xml
+C:\Users\User\source\repos\Megah Motor Label\bin\Debug\zh-CN\ChnCharInfo.resources.dll
