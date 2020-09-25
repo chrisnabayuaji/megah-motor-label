@@ -32,19 +32,79 @@ namespace Megah_Motor_Label
 
     private void btn2Cetak_Click(object sender, EventArgs e)
     {
-      MessageBoxButtons buttons = MessageBoxButtons.AbortRetryIgnore;
       DialogResult result = MessageBox.Show("Apakah anda yakin untuk mencetak?", "Peringatan", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
       if (result == DialogResult.Yes)
       {
-        //cetak
-        txt2NamaBarang.Text = "";
-        txt2TipeMobil.Text = "";
-        txt2KodeJual.Text = "";
-        txt2KodeMandarin.Text = "";
-        txt2HurufMandarin.Text = "";
-        num2Cetak.Value = 0;
-        txt2NamaBarang.Focus();
+        if (txt2AsalBarang.Text == "" || txt2NamaBarang.Text == "" || txt2TipeMobil.Text == "" || txt2KodeJual.Text == "" || txt2HurufMandarin.Text == "")
+        {
+          MessageBox.Show("Kolom tidak boleh kosong!", "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+        }
+        else
+        {
+          for(int i = 0; i <= num2Cetak.Value; i++)
+          {
+            cetak_2();
+          }
+        }
       };
+    }
+
+    private void cetak_2()
+    {
+      try
+      {
+        string text = System.IO.File.ReadAllText("./settings2.txt");
+        var thePrinterConn = ConnectionBuilder.Build(text);
+        try
+        {
+          // Open the connection - physical connection is established here.
+          thePrinterConn.Open();
+
+          // This example prints "This is a ZPL test." near the top of the label.
+          string zplData = "^XA" +
+            //item id
+            "^FO015,21^A0,34,24^FD" + txt2AsalBarang.Text + "^FS" +
+            "^FO440,21^A0,34,24^FD" + txt2AsalBarang.Text + "^FS" +
+            //item name 1
+            "^FO015,55^A0,34,24^FD" + txt2NamaBarang.Text + "^FS" +
+            "^FO440,55^A0,34,24^FD" + txt2NamaBarang.Text + "^FS" +
+            //item name 2
+            "^FO015,89^A0,34,24^FD" + txt2TipeMobil.Text + "^FS" +
+            "^FO440,89^A0,34,24^FD" + txt2TipeMobil.Text + "^FS" +
+            //item name 3
+            "^FO015,123^A0,34,24^FD" + txt2KodeJual.Text + "^FS" +
+            "^FO440,123^A0,34,24^FD" + txt2KodeJual.Text + "^FS" +
+            //item chinese
+            "^FO015,156^CI28^A@N,36,30,E:SIMSUN.FNT^FD" + txt2HurufMandarin.Text + "^FS" +
+            "^FO440,156^CI28^A@N,36,30,E:SIMSUN.FNT^FD" + txt2HurufMandarin.Text + "^FS" +
+            "^XZ";
+
+          // Send the data to printer as a byte array.
+          thePrinterConn.Write(Encoding.UTF8.GetBytes(zplData));
+        }
+        catch (ConnectionException ex)
+        {
+          // Handle communications error here.
+          Console.WriteLine(ex.ToString());
+        }
+        finally
+        {
+          // Close the connection to release resources.
+          thePrinterConn.Close();
+        }
+      }
+      catch (Exception ex)
+      {
+        MessageBox.Show(ex.ToString(), "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+      }
+
+      txt2NamaBarang.Text = "";
+      txt2TipeMobil.Text = "";
+      txt2KodeJual.Text = "";
+      txt2KodeMandarin.Text = "";
+      txt2HurufMandarin.Text = "";
+      num2Cetak.Value = 0;
+      txt2NamaBarang.Focus();
     }
 
     private void txt2NamaBarang_KeyDown(object sender, KeyEventArgs e)
@@ -54,7 +114,7 @@ namespace Megah_Motor_Label
         txt2AsalBarang.Text = "";
         txt2AsalBarang.Focus();
       }
-      if (e.KeyCode == Keys.Enter)
+      if (e.KeyCode == Keys.Enter || e.KeyCode == Keys.Tab)
       {
         txt2TipeMobil.Focus();
       }
@@ -110,7 +170,7 @@ namespace Megah_Motor_Label
 
     private void txt2AsalBarang_KeyDown(object sender, KeyEventArgs e)
     {
-      if (e.KeyCode == Keys.Enter)
+      if (e.KeyCode == Keys.Enter || e.KeyCode == Keys.Tab)
       {
         txt2NamaBarang.Focus();
       }
@@ -118,7 +178,7 @@ namespace Megah_Motor_Label
 
     private void txt2TipeMobil_KeyDown(object sender, KeyEventArgs e)
     {
-      if (e.KeyCode == Keys.Enter)
+      if (e.KeyCode == Keys.Enter || e.KeyCode == Keys.Tab)
       {
         txt2KodeJual.Focus();
       }
@@ -126,7 +186,7 @@ namespace Megah_Motor_Label
 
     private void txt2KodeJual_KeyDown(object sender, KeyEventArgs e)
     {
-      if (e.KeyCode == Keys.Enter)
+      if (e.KeyCode == Keys.Enter || e.KeyCode == Keys.Tab)
       {
         txt2KodeMandarin.Focus();
       }
@@ -134,9 +194,9 @@ namespace Megah_Motor_Label
 
     private void num2Cetak_KeyDown(object sender, KeyEventArgs e)
     {
-      if (e.KeyCode == Keys.Enter)
+      if (e.KeyCode == Keys.Enter || e.KeyCode == Keys.Tab)
       {
-        //btn2Cetak.Focus();
+        btn2Cetak.Focus();
       }
     }
 
@@ -184,7 +244,7 @@ namespace Megah_Motor_Label
 
     private void txt2KodeMandarin_KeyDown(object sender, KeyEventArgs e)
     {
-      if (e.KeyCode == Keys.Enter)
+      if (e.KeyCode == Keys.Enter || e.KeyCode == Keys.Tab)
       {
         txt2HurufMandarin.Focus();
       }
@@ -192,23 +252,15 @@ namespace Megah_Motor_Label
 
     private void txt2HurufMandarin_KeyDown(object sender, KeyEventArgs e)
     {
-      if (e.KeyCode == Keys.Enter)
+      if (e.KeyCode == Keys.Enter || e.KeyCode == Keys.Tab)
       {
         num2Cetak.Focus();
       }
     }
 
-    private void num2Cetak_KeyDown_1(object sender, KeyEventArgs e)
-    {
-      if (e.KeyCode == Keys.Enter)
-      {
-        btn2Cetak.Focus();
-      }
-    }
-
     private void txt3AsalBarang_KeyDown(object sender, KeyEventArgs e)
     {
-      if (e.KeyCode == Keys.Enter)
+      if (e.KeyCode == Keys.Enter || e.KeyCode == Keys.Tab)
       {
         txt3NamaBarang.Focus();
       }
@@ -221,7 +273,7 @@ namespace Megah_Motor_Label
         txt3AsalBarang.Text = "";
         txt3AsalBarang.Focus();
       }
-      if (e.KeyCode == Keys.Enter)
+      if (e.KeyCode == Keys.Enter || e.KeyCode == Keys.Tab)
       {
         txt3TipeMobil.Focus();
       }
@@ -229,7 +281,7 @@ namespace Megah_Motor_Label
 
     private void txt3TipeMobil_KeyDown(object sender, KeyEventArgs e)
     {
-      if (e.KeyCode == Keys.Enter)
+      if (e.KeyCode == Keys.Enter || e.KeyCode == Keys.Tab)
       {
         txt3KodeJual.Focus();
       }
@@ -237,7 +289,7 @@ namespace Megah_Motor_Label
 
     private void txt3KodeJual_KeyDown(object sender, KeyEventArgs e)
     {
-      if (e.KeyCode == Keys.Enter)
+      if (e.KeyCode == Keys.Enter || e.KeyCode == Keys.Tab)
       {
         txt3KodeMandarin.Focus();
       }
@@ -245,7 +297,7 @@ namespace Megah_Motor_Label
 
     private void txt3KodeMandarin_KeyDown(object sender, KeyEventArgs e)
     {
-      if (e.KeyCode == Keys.Enter)
+      if (e.KeyCode == Keys.Enter || e.KeyCode == Keys.Tab)
       {
         txt3HurufMandarin.Focus();
       }
@@ -253,7 +305,7 @@ namespace Megah_Motor_Label
 
     private void txt3HurufMandarin_KeyDown(object sender, KeyEventArgs e)
     {
-      if (e.KeyCode == Keys.Enter)
+      if (e.KeyCode == Keys.Enter || e.KeyCode == Keys.Tab)
       {
         num3Cetak.Focus();
       }
@@ -261,7 +313,7 @@ namespace Megah_Motor_Label
 
     private void num3Cetak_KeyDown(object sender, KeyEventArgs e)
     {
-      if (e.KeyCode == Keys.Enter)
+      if (e.KeyCode == Keys.Enter || e.KeyCode == Keys.Tab)
       {
         btn3Cetak.Focus();
       }
@@ -281,19 +333,84 @@ namespace Megah_Motor_Label
 
     private void btn3Cetak_Click(object sender, EventArgs e)
     {
-      MessageBoxButtons buttons = MessageBoxButtons.AbortRetryIgnore;
       DialogResult result = MessageBox.Show("Apakah anda yakin untuk mencetak?", "Peringatan", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
       if (result == DialogResult.Yes)
       {
-        //cetak
-        txt3NamaBarang.Text = "";
-        txt3TipeMobil.Text = "";
-        txt3KodeJual.Text = "";
-        txt3KodeMandarin.Text = "";
-        txt3HurufMandarin.Text = "";
-        num3Cetak.Value = 0;
-        txt3NamaBarang.Focus();
+        if (txt3AsalBarang.Text == "" || txt3NamaBarang.Text == "" || txt3TipeMobil.Text == "" || txt3KodeJual.Text == "" || txt3HurufMandarin.Text == "")
+        {
+          MessageBox.Show("Kolom tidak boleh kosong!", "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+        }
+        else
+        {
+          for (int i = 0; i <= num3Cetak.Value; i++)
+          {
+            cetak_3();
+          }
+        }
       };
+    }
+
+    private void cetak_3()
+    {
+      try
+      {
+        string text = System.IO.File.ReadAllText("./settings3.txt");
+        var thePrinterConn = ConnectionBuilder.Build(text);
+        try
+        {
+          // Open the connection - physical connection is established here.
+          thePrinterConn.Open();
+
+          // This example prints "This is a ZPL test." near the top of the label.
+          string zplData = "^XA" +
+            //item id
+            "^FO015,21^A0,34,24^FD" + txt3AsalBarang.Text + "^FS" +
+            "^FO300,21^A0,34,24^FD" + txt3AsalBarang.Text + "^FS" +
+            "^FO590,21^A0,34,24^FD" + txt3AsalBarang.Text + "^FS" +
+            //item name 1
+            "^FO015,55^A0,34,24^FD" + txt3NamaBarang.Text + "^FS" +
+            "^FO300,55^A0,34,24^FD" + txt3NamaBarang.Text + "^FS" +
+            "^FO590,55^A0,34,24^FD" + txt3NamaBarang.Text + "^FS" +
+            //item name 2
+            "^FO015,89^A0,34,24^FD" + txt3TipeMobil.Text + "^FS" +
+            "^FO300,89^A0,34,24^FD" + txt3TipeMobil.Text + "^FS" +
+            "^FO590,89^A0,34,24^FD" + txt3TipeMobil.Text + "^FS" +
+            //item name 3
+            "^FO015,123^A0,34,24^FD" + txt3KodeJual.Text + "^FS" +
+            "^FO300,123^A0,34,24^FD" + txt3KodeJual.Text + "^FS" +
+            "^FO590,123^A0,34,24^FD" + txt3KodeJual.Text + "^FS" +
+            //item chinese
+            "^FO015,156^CI28^A@N,36,30,E:SIMSUN.FNT^FD" + txt3HurufMandarin.Text + "^FS" +
+            "^FO300,156^CI28^A@N,36,30,E:SIMSUN.FNT^FD" + txt3HurufMandarin.Text + "^FS" +
+            "^FO590,156^CI28^A@N,36,30,E:SIMSUN.FNT^FD" + txt3HurufMandarin.Text + "^FS" +
+            "^XZ";
+
+          // Send the data to printer as a byte array.
+          thePrinterConn.Write(Encoding.UTF8.GetBytes(zplData));
+        }
+        catch (ConnectionException ex)
+        {
+          // Handle communications error here.
+          Console.WriteLine(ex.ToString());
+        }
+        finally
+        {
+          // Close the connection to release resources.
+          thePrinterConn.Close();
+        }
+      }
+      catch (Exception ex)
+      {
+        MessageBox.Show(ex.ToString(), "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+      }
+
+      txt3NamaBarang.Text = "";
+      txt3TipeMobil.Text = "";
+      txt3KodeJual.Text = "";
+      txt3KodeMandarin.Text = "";
+      txt3HurufMandarin.Text = "";
+      num3Cetak.Value = 0;
+      txt3NamaBarang.Focus();
     }
 
     private void btn3Mandarin_Click(object sender, EventArgs e)
@@ -309,5 +426,6 @@ namespace Megah_Motor_Label
         MessageBox.Show("Konversi hanya berupa angka!", "Kesalahan", MessageBoxButtons.OK, MessageBoxIcon.Warning);
       }
     }
+
   }
 }

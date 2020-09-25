@@ -33,8 +33,10 @@
       this.lblAddress = new System.Windows.Forms.Label();
       this.lblTitle = new System.Windows.Forms.Label();
       this.tblLayoutMain = new System.Windows.Forms.TableLayoutPanel();
+      this.lblTitle3 = new System.Windows.Forms.Label();
       this.lblTitle2 = new System.Windows.Forms.Label();
       this.tblLayout2 = new System.Windows.Forms.TableLayoutPanel();
+      this.txt2HurufMandarin = new System.Windows.Forms.TextBox();
       this.lbl2HurufMandarin = new System.Windows.Forms.Label();
       this.lbl2AsalBarang = new System.Windows.Forms.Label();
       this.txt2AsalBarang = new System.Windows.Forms.TextBox();
@@ -45,46 +47,44 @@
       this.lbl2KodeJual = new System.Windows.Forms.Label();
       this.txt2KodeJual = new System.Windows.Forms.TextBox();
       this.lbl2KodeMandarin = new System.Windows.Forms.Label();
-      this.txt2KodeMandarin = new System.Windows.Forms.TextBox();
-      this.tbl2Mandarin = new System.Windows.Forms.TableLayoutPanel();
-      this.txt2HurufMandarin = new System.Windows.Forms.TextBox();
-      this.btn2Mandarin = new System.Windows.Forms.Button();
       this.lbl2Cetak = new System.Windows.Forms.Label();
       this.num2Cetak = new System.Windows.Forms.NumericUpDown();
+      this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+      this.btn2Mandarin = new System.Windows.Forms.Button();
+      this.txt2KodeMandarin = new System.Windows.Forms.TextBox();
       this.tblLayoutCetak2 = new System.Windows.Forms.TableLayoutPanel();
       this.btn2Cetak = new System.Windows.Forms.Button();
       this.btn2Reset = new System.Windows.Forms.Button();
-      this.panel1 = new System.Windows.Forms.Panel();
       this.tblLayout3 = new System.Windows.Forms.TableLayoutPanel();
-      this.lblTitle3 = new System.Windows.Forms.Label();
+      this.txt3HurufMandarin = new System.Windows.Forms.TextBox();
+      this.num3Cetak = new System.Windows.Forms.NumericUpDown();
+      this.lbl3Cetak = new System.Windows.Forms.Label();
+      this.lbl3HurufMandarin = new System.Windows.Forms.Label();
+      this.lbl3KodeMandarin = new System.Windows.Forms.Label();
+      this.txt3KodeJual = new System.Windows.Forms.TextBox();
+      this.lbl3KodeJual = new System.Windows.Forms.Label();
+      this.txt3TipeMobil = new System.Windows.Forms.TextBox();
+      this.lbl3TipeMobil = new System.Windows.Forms.Label();
+      this.txt3NamaBarang = new System.Windows.Forms.TextBox();
+      this.lbl3NamaBarang = new System.Windows.Forms.Label();
       this.lbl3AsalBarang = new System.Windows.Forms.Label();
       this.txt3AsalBarang = new System.Windows.Forms.TextBox();
-      this.lbl3NamaBarang = new System.Windows.Forms.Label();
-      this.txt3NamaBarang = new System.Windows.Forms.TextBox();
-      this.lbl3TipeMobil = new System.Windows.Forms.Label();
-      this.txt3TipeMobil = new System.Windows.Forms.TextBox();
-      this.lbl3KodeJual = new System.Windows.Forms.Label();
-      this.txt3KodeJual = new System.Windows.Forms.TextBox();
-      this.lbl3KodeMandarin = new System.Windows.Forms.Label();
-      this.txt3KodeMandarin = new System.Windows.Forms.TextBox();
-      this.lbl3HurufMandarin = new System.Windows.Forms.Label();
-      this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-      this.txt3HurufMandarin = new System.Windows.Forms.TextBox();
+      this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
       this.btn3Mandarin = new System.Windows.Forms.Button();
-      this.lbl3Cetak = new System.Windows.Forms.Label();
-      this.num3Cetak = new System.Windows.Forms.NumericUpDown();
+      this.txt3KodeMandarin = new System.Windows.Forms.TextBox();
       this.tblLayoutCetak3 = new System.Windows.Forms.TableLayoutPanel();
       this.btn3Cetak = new System.Windows.Forms.Button();
       this.btn3Reset = new System.Windows.Forms.Button();
+      this.panel1 = new System.Windows.Forms.Panel();
       this.pnlTop.SuspendLayout();
       this.tblLayoutMain.SuspendLayout();
       this.tblLayout2.SuspendLayout();
-      this.tbl2Mandarin.SuspendLayout();
       ((System.ComponentModel.ISupportInitialize)(this.num2Cetak)).BeginInit();
+      this.tableLayoutPanel1.SuspendLayout();
       this.tblLayoutCetak2.SuspendLayout();
       this.tblLayout3.SuspendLayout();
-      this.tableLayoutPanel2.SuspendLayout();
       ((System.ComponentModel.ISupportInitialize)(this.num3Cetak)).BeginInit();
+      this.tableLayoutPanel3.SuspendLayout();
       this.tblLayoutCetak3.SuspendLayout();
       this.SuspendLayout();
       // 
@@ -143,6 +143,19 @@
       this.tblLayoutMain.Size = new System.Drawing.Size(1184, 509);
       this.tblLayoutMain.TabIndex = 1;
       // 
+      // lblTitle3
+      // 
+      this.lblTitle3.AutoSize = true;
+      this.lblTitle3.Dock = System.Windows.Forms.DockStyle.Fill;
+      this.lblTitle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+      this.lblTitle3.Location = new System.Drawing.Point(595, 20);
+      this.lblTitle3.Margin = new System.Windows.Forms.Padding(3, 20, 3, 0);
+      this.lblTitle3.Name = "lblTitle3";
+      this.lblTitle3.Size = new System.Drawing.Size(586, 40);
+      this.lblTitle3.TabIndex = 4;
+      this.lblTitle3.Text = "CETAK LABEL 3 KOLOM";
+      this.lblTitle3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+      // 
       // lblTitle2
       // 
       this.lblTitle2.AutoSize = true;
@@ -161,6 +174,7 @@
       this.tblLayout2.ColumnCount = 2;
       this.tblLayout2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30F));
       this.tblLayout2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 70F));
+      this.tblLayout2.Controls.Add(this.txt2HurufMandarin, 1, 5);
       this.tblLayout2.Controls.Add(this.lbl2HurufMandarin, 0, 5);
       this.tblLayout2.Controls.Add(this.lbl2AsalBarang, 0, 0);
       this.tblLayout2.Controls.Add(this.txt2AsalBarang, 1, 0);
@@ -171,10 +185,9 @@
       this.tblLayout2.Controls.Add(this.lbl2KodeJual, 0, 3);
       this.tblLayout2.Controls.Add(this.txt2KodeJual, 1, 3);
       this.tblLayout2.Controls.Add(this.lbl2KodeMandarin, 0, 4);
-      this.tblLayout2.Controls.Add(this.txt2KodeMandarin, 1, 4);
-      this.tblLayout2.Controls.Add(this.tbl2Mandarin, 1, 5);
       this.tblLayout2.Controls.Add(this.lbl2Cetak, 0, 6);
       this.tblLayout2.Controls.Add(this.num2Cetak, 1, 6);
+      this.tblLayout2.Controls.Add(this.tableLayoutPanel1, 1, 4);
       this.tblLayout2.Dock = System.Windows.Forms.DockStyle.Fill;
       this.tblLayout2.Location = new System.Drawing.Point(3, 63);
       this.tblLayout2.Name = "tblLayout2";
@@ -189,6 +202,16 @@
       this.tblLayout2.Size = new System.Drawing.Size(586, 383);
       this.tblLayout2.TabIndex = 1;
       // 
+      // txt2HurufMandarin
+      // 
+      this.txt2HurufMandarin.Dock = System.Windows.Forms.DockStyle.Fill;
+      this.txt2HurufMandarin.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+      this.txt2HurufMandarin.Location = new System.Drawing.Point(178, 278);
+      this.txt2HurufMandarin.Name = "txt2HurufMandarin";
+      this.txt2HurufMandarin.Size = new System.Drawing.Size(405, 44);
+      this.txt2HurufMandarin.TabIndex = 12;
+      this.txt2HurufMandarin.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txt2HurufMandarin_KeyDown);
+      // 
       // lbl2HurufMandarin
       // 
       this.lbl2HurufMandarin.AutoSize = true;
@@ -197,7 +220,7 @@
       this.lbl2HurufMandarin.Location = new System.Drawing.Point(3, 275);
       this.lbl2HurufMandarin.Name = "lbl2HurufMandarin";
       this.lbl2HurufMandarin.Size = new System.Drawing.Size(169, 55);
-      this.lbl2HurufMandarin.TabIndex = 10;
+      this.lbl2HurufMandarin.TabIndex = 11;
       this.lbl2HurufMandarin.Text = "Huruf Mandarin";
       this.lbl2HurufMandarin.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
       // 
@@ -305,54 +328,6 @@
       this.lbl2KodeMandarin.Text = "Kode Mandarin";
       this.lbl2KodeMandarin.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
       // 
-      // txt2KodeMandarin
-      // 
-      this.txt2KodeMandarin.Dock = System.Windows.Forms.DockStyle.Fill;
-      this.txt2KodeMandarin.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      this.txt2KodeMandarin.Location = new System.Drawing.Point(178, 223);
-      this.txt2KodeMandarin.MaxLength = 14;
-      this.txt2KodeMandarin.Name = "txt2KodeMandarin";
-      this.txt2KodeMandarin.Size = new System.Drawing.Size(405, 44);
-      this.txt2KodeMandarin.TabIndex = 9;
-      this.txt2KodeMandarin.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txt2KodeMandarin_KeyDown);
-      // 
-      // tbl2Mandarin
-      // 
-      this.tbl2Mandarin.ColumnCount = 2;
-      this.tbl2Mandarin.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 80F));
-      this.tbl2Mandarin.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-      this.tbl2Mandarin.Controls.Add(this.txt2HurufMandarin, 0, 0);
-      this.tbl2Mandarin.Controls.Add(this.btn2Mandarin, 1, 0);
-      this.tbl2Mandarin.Dock = System.Windows.Forms.DockStyle.Fill;
-      this.tbl2Mandarin.Location = new System.Drawing.Point(178, 278);
-      this.tbl2Mandarin.Name = "tbl2Mandarin";
-      this.tbl2Mandarin.RowCount = 1;
-      this.tbl2Mandarin.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-      this.tbl2Mandarin.Size = new System.Drawing.Size(405, 49);
-      this.tbl2Mandarin.TabIndex = 11;
-      // 
-      // txt2HurufMandarin
-      // 
-      this.txt2HurufMandarin.Dock = System.Windows.Forms.DockStyle.Fill;
-      this.txt2HurufMandarin.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      this.txt2HurufMandarin.Location = new System.Drawing.Point(3, 3);
-      this.txt2HurufMandarin.Name = "txt2HurufMandarin";
-      this.txt2HurufMandarin.Size = new System.Drawing.Size(318, 44);
-      this.txt2HurufMandarin.TabIndex = 0;
-      this.txt2HurufMandarin.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txt2HurufMandarin_KeyDown);
-      // 
-      // btn2Mandarin
-      // 
-      this.btn2Mandarin.Dock = System.Windows.Forms.DockStyle.Fill;
-      this.btn2Mandarin.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      this.btn2Mandarin.Location = new System.Drawing.Point(327, 3);
-      this.btn2Mandarin.Name = "btn2Mandarin";
-      this.btn2Mandarin.Size = new System.Drawing.Size(75, 43);
-      this.btn2Mandarin.TabIndex = 1;
-      this.btn2Mandarin.Text = "Konversi";
-      this.btn2Mandarin.UseVisualStyleBackColor = true;
-      this.btn2Mandarin.Click += new System.EventHandler(this.btn2Mandarin_Click);
-      // 
       // lbl2Cetak
       // 
       this.lbl2Cetak.AutoSize = true;
@@ -360,8 +335,8 @@
       this.lbl2Cetak.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
       this.lbl2Cetak.Location = new System.Drawing.Point(3, 330);
       this.lbl2Cetak.Name = "lbl2Cetak";
-      this.lbl2Cetak.Size = new System.Drawing.Size(169, 53);
-      this.lbl2Cetak.TabIndex = 12;
+      this.lbl2Cetak.Size = new System.Drawing.Size(169, 55);
+      this.lbl2Cetak.TabIndex = 13;
       this.lbl2Cetak.Text = "Jumlah Cetak";
       this.lbl2Cetak.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
       // 
@@ -372,8 +347,48 @@
       this.num2Cetak.Location = new System.Drawing.Point(178, 333);
       this.num2Cetak.Name = "num2Cetak";
       this.num2Cetak.Size = new System.Drawing.Size(405, 44);
-      this.num2Cetak.TabIndex = 13;
-      this.num2Cetak.KeyDown += new System.Windows.Forms.KeyEventHandler(this.num2Cetak_KeyDown_1);
+      this.num2Cetak.TabIndex = 14;
+      this.num2Cetak.KeyDown += new System.Windows.Forms.KeyEventHandler(this.num2Cetak_KeyDown);
+      // 
+      // tableLayoutPanel1
+      // 
+      this.tableLayoutPanel1.ColumnCount = 2;
+      this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 80F));
+      this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+      this.tableLayoutPanel1.Controls.Add(this.btn2Mandarin, 0, 0);
+      this.tableLayoutPanel1.Controls.Add(this.txt2KodeMandarin, 0, 0);
+      this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+      this.tableLayoutPanel1.Location = new System.Drawing.Point(175, 220);
+      this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(0);
+      this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+      this.tableLayoutPanel1.Padding = new System.Windows.Forms.Padding(0, 0, 0, 5);
+      this.tableLayoutPanel1.RowCount = 1;
+      this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+      this.tableLayoutPanel1.Size = new System.Drawing.Size(411, 55);
+      this.tableLayoutPanel1.TabIndex = 9;
+      // 
+      // btn2Mandarin
+      // 
+      this.btn2Mandarin.Dock = System.Windows.Forms.DockStyle.Fill;
+      this.btn2Mandarin.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+      this.btn2Mandarin.Location = new System.Drawing.Point(331, 3);
+      this.btn2Mandarin.Name = "btn2Mandarin";
+      this.btn2Mandarin.Size = new System.Drawing.Size(77, 44);
+      this.btn2Mandarin.TabIndex = 10;
+      this.btn2Mandarin.Text = "Konversi";
+      this.btn2Mandarin.UseVisualStyleBackColor = true;
+      this.btn2Mandarin.Click += new System.EventHandler(this.btn2Mandarin_Click);
+      // 
+      // txt2KodeMandarin
+      // 
+      this.txt2KodeMandarin.Dock = System.Windows.Forms.DockStyle.Fill;
+      this.txt2KodeMandarin.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+      this.txt2KodeMandarin.Location = new System.Drawing.Point(3, 3);
+      this.txt2KodeMandarin.MaxLength = 14;
+      this.txt2KodeMandarin.Name = "txt2KodeMandarin";
+      this.txt2KodeMandarin.Size = new System.Drawing.Size(322, 44);
+      this.txt2KodeMandarin.TabIndex = 9;
+      this.txt2KodeMandarin.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txt2KodeMandarin_KeyDown);
       // 
       // tblLayoutCetak2
       // 
@@ -416,23 +431,15 @@
       this.btn2Reset.UseVisualStyleBackColor = true;
       this.btn2Reset.Click += new System.EventHandler(this.btn2Reset_Click);
       // 
-      // panel1
-      // 
-      this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-      this.panel1.Location = new System.Drawing.Point(0, 591);
-      this.panel1.Name = "panel1";
-      this.panel1.Size = new System.Drawing.Size(1184, 28);
-      this.panel1.TabIndex = 2;
-      // 
       // tblLayout3
       // 
       this.tblLayout3.ColumnCount = 2;
       this.tblLayout3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30F));
       this.tblLayout3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 70F));
+      this.tblLayout3.Controls.Add(this.txt3HurufMandarin, 1, 5);
       this.tblLayout3.Controls.Add(this.num3Cetak, 1, 6);
       this.tblLayout3.Controls.Add(this.lbl3Cetak, 0, 6);
       this.tblLayout3.Controls.Add(this.lbl3HurufMandarin, 0, 5);
-      this.tblLayout3.Controls.Add(this.txt3KodeMandarin, 1, 4);
       this.tblLayout3.Controls.Add(this.lbl3KodeMandarin, 0, 4);
       this.tblLayout3.Controls.Add(this.txt3KodeJual, 1, 3);
       this.tblLayout3.Controls.Add(this.lbl3KodeJual, 0, 3);
@@ -442,7 +449,7 @@
       this.tblLayout3.Controls.Add(this.lbl3NamaBarang, 0, 1);
       this.tblLayout3.Controls.Add(this.lbl3AsalBarang, 0, 0);
       this.tblLayout3.Controls.Add(this.txt3AsalBarang, 1, 0);
-      this.tblLayout3.Controls.Add(this.tableLayoutPanel2, 1, 5);
+      this.tblLayout3.Controls.Add(this.tableLayoutPanel3, 1, 4);
       this.tblLayout3.Dock = System.Windows.Forms.DockStyle.Fill;
       this.tblLayout3.Location = new System.Drawing.Point(595, 63);
       this.tblLayout3.Name = "tblLayout3";
@@ -457,18 +464,127 @@
       this.tblLayout3.Size = new System.Drawing.Size(586, 383);
       this.tblLayout3.TabIndex = 3;
       // 
-      // lblTitle3
+      // txt3HurufMandarin
       // 
-      this.lblTitle3.AutoSize = true;
-      this.lblTitle3.Dock = System.Windows.Forms.DockStyle.Fill;
-      this.lblTitle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      this.lblTitle3.Location = new System.Drawing.Point(595, 20);
-      this.lblTitle3.Margin = new System.Windows.Forms.Padding(3, 20, 3, 0);
-      this.lblTitle3.Name = "lblTitle3";
-      this.lblTitle3.Size = new System.Drawing.Size(586, 40);
-      this.lblTitle3.TabIndex = 4;
-      this.lblTitle3.Text = "CETAK LABEL 3 KOLOM";
-      this.lblTitle3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+      this.txt3HurufMandarin.Dock = System.Windows.Forms.DockStyle.Fill;
+      this.txt3HurufMandarin.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+      this.txt3HurufMandarin.Location = new System.Drawing.Point(178, 278);
+      this.txt3HurufMandarin.Name = "txt3HurufMandarin";
+      this.txt3HurufMandarin.Size = new System.Drawing.Size(405, 44);
+      this.txt3HurufMandarin.TabIndex = 14;
+      this.txt3HurufMandarin.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txt3HurufMandarin_KeyDown);
+      // 
+      // num3Cetak
+      // 
+      this.num3Cetak.Dock = System.Windows.Forms.DockStyle.Fill;
+      this.num3Cetak.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+      this.num3Cetak.Location = new System.Drawing.Point(178, 333);
+      this.num3Cetak.Name = "num3Cetak";
+      this.num3Cetak.Size = new System.Drawing.Size(405, 44);
+      this.num3Cetak.TabIndex = 16;
+      this.num3Cetak.KeyDown += new System.Windows.Forms.KeyEventHandler(this.num3Cetak_KeyDown);
+      // 
+      // lbl3Cetak
+      // 
+      this.lbl3Cetak.AutoSize = true;
+      this.lbl3Cetak.Dock = System.Windows.Forms.DockStyle.Fill;
+      this.lbl3Cetak.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+      this.lbl3Cetak.Location = new System.Drawing.Point(3, 330);
+      this.lbl3Cetak.Name = "lbl3Cetak";
+      this.lbl3Cetak.Size = new System.Drawing.Size(169, 55);
+      this.lbl3Cetak.TabIndex = 15;
+      this.lbl3Cetak.Text = "Jumlah Cetak";
+      this.lbl3Cetak.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+      // 
+      // lbl3HurufMandarin
+      // 
+      this.lbl3HurufMandarin.AutoSize = true;
+      this.lbl3HurufMandarin.Dock = System.Windows.Forms.DockStyle.Fill;
+      this.lbl3HurufMandarin.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+      this.lbl3HurufMandarin.Location = new System.Drawing.Point(3, 275);
+      this.lbl3HurufMandarin.Name = "lbl3HurufMandarin";
+      this.lbl3HurufMandarin.Size = new System.Drawing.Size(169, 55);
+      this.lbl3HurufMandarin.TabIndex = 13;
+      this.lbl3HurufMandarin.Text = "Huruf Mandarin";
+      this.lbl3HurufMandarin.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+      // 
+      // lbl3KodeMandarin
+      // 
+      this.lbl3KodeMandarin.AutoSize = true;
+      this.lbl3KodeMandarin.Dock = System.Windows.Forms.DockStyle.Fill;
+      this.lbl3KodeMandarin.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+      this.lbl3KodeMandarin.Location = new System.Drawing.Point(3, 220);
+      this.lbl3KodeMandarin.Name = "lbl3KodeMandarin";
+      this.lbl3KodeMandarin.Size = new System.Drawing.Size(169, 55);
+      this.lbl3KodeMandarin.TabIndex = 8;
+      this.lbl3KodeMandarin.Text = "Kode Mandarin";
+      this.lbl3KodeMandarin.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+      // 
+      // txt3KodeJual
+      // 
+      this.txt3KodeJual.Dock = System.Windows.Forms.DockStyle.Fill;
+      this.txt3KodeJual.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+      this.txt3KodeJual.Location = new System.Drawing.Point(178, 168);
+      this.txt3KodeJual.Name = "txt3KodeJual";
+      this.txt3KodeJual.Size = new System.Drawing.Size(405, 44);
+      this.txt3KodeJual.TabIndex = 7;
+      this.txt3KodeJual.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txt3KodeJual_KeyDown);
+      // 
+      // lbl3KodeJual
+      // 
+      this.lbl3KodeJual.AutoSize = true;
+      this.lbl3KodeJual.Dock = System.Windows.Forms.DockStyle.Fill;
+      this.lbl3KodeJual.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+      this.lbl3KodeJual.Location = new System.Drawing.Point(3, 165);
+      this.lbl3KodeJual.Name = "lbl3KodeJual";
+      this.lbl3KodeJual.Size = new System.Drawing.Size(169, 55);
+      this.lbl3KodeJual.TabIndex = 6;
+      this.lbl3KodeJual.Text = "Kode Jual";
+      this.lbl3KodeJual.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+      // 
+      // txt3TipeMobil
+      // 
+      this.txt3TipeMobil.Dock = System.Windows.Forms.DockStyle.Fill;
+      this.txt3TipeMobil.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+      this.txt3TipeMobil.Location = new System.Drawing.Point(178, 113);
+      this.txt3TipeMobil.Name = "txt3TipeMobil";
+      this.txt3TipeMobil.Size = new System.Drawing.Size(405, 44);
+      this.txt3TipeMobil.TabIndex = 5;
+      this.txt3TipeMobil.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txt3TipeMobil_KeyDown);
+      // 
+      // lbl3TipeMobil
+      // 
+      this.lbl3TipeMobil.AutoSize = true;
+      this.lbl3TipeMobil.Dock = System.Windows.Forms.DockStyle.Fill;
+      this.lbl3TipeMobil.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+      this.lbl3TipeMobil.Location = new System.Drawing.Point(3, 110);
+      this.lbl3TipeMobil.Name = "lbl3TipeMobil";
+      this.lbl3TipeMobil.Size = new System.Drawing.Size(169, 55);
+      this.lbl3TipeMobil.TabIndex = 4;
+      this.lbl3TipeMobil.Text = "Tipe Mobil";
+      this.lbl3TipeMobil.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+      // 
+      // txt3NamaBarang
+      // 
+      this.txt3NamaBarang.Dock = System.Windows.Forms.DockStyle.Fill;
+      this.txt3NamaBarang.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+      this.txt3NamaBarang.Location = new System.Drawing.Point(178, 58);
+      this.txt3NamaBarang.Name = "txt3NamaBarang";
+      this.txt3NamaBarang.Size = new System.Drawing.Size(405, 44);
+      this.txt3NamaBarang.TabIndex = 3;
+      this.txt3NamaBarang.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txt3NamaBarang_KeyDown);
+      // 
+      // lbl3NamaBarang
+      // 
+      this.lbl3NamaBarang.AutoSize = true;
+      this.lbl3NamaBarang.Dock = System.Windows.Forms.DockStyle.Fill;
+      this.lbl3NamaBarang.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+      this.lbl3NamaBarang.Location = new System.Drawing.Point(3, 55);
+      this.lbl3NamaBarang.Name = "lbl3NamaBarang";
+      this.lbl3NamaBarang.Size = new System.Drawing.Size(169, 55);
+      this.lbl3NamaBarang.TabIndex = 2;
+      this.lbl3NamaBarang.Text = "Nama Barang";
+      this.lbl3NamaBarang.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
       // 
       // lbl3AsalBarang
       // 
@@ -492,164 +608,44 @@
       this.txt3AsalBarang.TabIndex = 1;
       this.txt3AsalBarang.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txt3AsalBarang_KeyDown);
       // 
-      // lbl3NamaBarang
+      // tableLayoutPanel3
       // 
-      this.lbl3NamaBarang.AutoSize = true;
-      this.lbl3NamaBarang.Dock = System.Windows.Forms.DockStyle.Fill;
-      this.lbl3NamaBarang.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      this.lbl3NamaBarang.Location = new System.Drawing.Point(3, 55);
-      this.lbl3NamaBarang.Name = "lbl3NamaBarang";
-      this.lbl3NamaBarang.Size = new System.Drawing.Size(169, 55);
-      this.lbl3NamaBarang.TabIndex = 2;
-      this.lbl3NamaBarang.Text = "Nama Barang";
-      this.lbl3NamaBarang.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-      // 
-      // txt3NamaBarang
-      // 
-      this.txt3NamaBarang.Dock = System.Windows.Forms.DockStyle.Fill;
-      this.txt3NamaBarang.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      this.txt3NamaBarang.Location = new System.Drawing.Point(178, 58);
-      this.txt3NamaBarang.Name = "txt3NamaBarang";
-      this.txt3NamaBarang.Size = new System.Drawing.Size(405, 44);
-      this.txt3NamaBarang.TabIndex = 3;
-      this.txt3NamaBarang.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txt3NamaBarang_KeyDown);
-      // 
-      // lbl3TipeMobil
-      // 
-      this.lbl3TipeMobil.AutoSize = true;
-      this.lbl3TipeMobil.Dock = System.Windows.Forms.DockStyle.Fill;
-      this.lbl3TipeMobil.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      this.lbl3TipeMobil.Location = new System.Drawing.Point(3, 110);
-      this.lbl3TipeMobil.Name = "lbl3TipeMobil";
-      this.lbl3TipeMobil.Size = new System.Drawing.Size(169, 55);
-      this.lbl3TipeMobil.TabIndex = 4;
-      this.lbl3TipeMobil.Text = "Tipe Mobil";
-      this.lbl3TipeMobil.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-      // 
-      // txt3TipeMobil
-      // 
-      this.txt3TipeMobil.Dock = System.Windows.Forms.DockStyle.Fill;
-      this.txt3TipeMobil.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      this.txt3TipeMobil.Location = new System.Drawing.Point(178, 113);
-      this.txt3TipeMobil.Name = "txt3TipeMobil";
-      this.txt3TipeMobil.Size = new System.Drawing.Size(405, 44);
-      this.txt3TipeMobil.TabIndex = 5;
-      this.txt3TipeMobil.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txt3TipeMobil_KeyDown);
-      // 
-      // lbl3KodeJual
-      // 
-      this.lbl3KodeJual.AutoSize = true;
-      this.lbl3KodeJual.Dock = System.Windows.Forms.DockStyle.Fill;
-      this.lbl3KodeJual.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      this.lbl3KodeJual.Location = new System.Drawing.Point(3, 165);
-      this.lbl3KodeJual.Name = "lbl3KodeJual";
-      this.lbl3KodeJual.Size = new System.Drawing.Size(169, 55);
-      this.lbl3KodeJual.TabIndex = 6;
-      this.lbl3KodeJual.Text = "Kode Jual";
-      this.lbl3KodeJual.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-      // 
-      // txt3KodeJual
-      // 
-      this.txt3KodeJual.Dock = System.Windows.Forms.DockStyle.Fill;
-      this.txt3KodeJual.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      this.txt3KodeJual.Location = new System.Drawing.Point(178, 168);
-      this.txt3KodeJual.Name = "txt3KodeJual";
-      this.txt3KodeJual.Size = new System.Drawing.Size(405, 44);
-      this.txt3KodeJual.TabIndex = 7;
-      this.txt3KodeJual.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txt3KodeJual_KeyDown);
-      // 
-      // lbl3KodeMandarin
-      // 
-      this.lbl3KodeMandarin.AutoSize = true;
-      this.lbl3KodeMandarin.Dock = System.Windows.Forms.DockStyle.Fill;
-      this.lbl3KodeMandarin.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      this.lbl3KodeMandarin.Location = new System.Drawing.Point(3, 220);
-      this.lbl3KodeMandarin.Name = "lbl3KodeMandarin";
-      this.lbl3KodeMandarin.Size = new System.Drawing.Size(169, 55);
-      this.lbl3KodeMandarin.TabIndex = 8;
-      this.lbl3KodeMandarin.Text = "Kode Mandarin";
-      this.lbl3KodeMandarin.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-      // 
-      // txt3KodeMandarin
-      // 
-      this.txt3KodeMandarin.Dock = System.Windows.Forms.DockStyle.Fill;
-      this.txt3KodeMandarin.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      this.txt3KodeMandarin.Location = new System.Drawing.Point(178, 223);
-      this.txt3KodeMandarin.Name = "txt3KodeMandarin";
-      this.txt3KodeMandarin.Size = new System.Drawing.Size(405, 44);
-      this.txt3KodeMandarin.TabIndex = 9;
-      this.txt3KodeMandarin.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txt3KodeMandarin_KeyDown);
-      // 
-      // lbl3HurufMandarin
-      // 
-      this.lbl3HurufMandarin.AutoSize = true;
-      this.lbl3HurufMandarin.Dock = System.Windows.Forms.DockStyle.Fill;
-      this.lbl3HurufMandarin.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      this.lbl3HurufMandarin.Location = new System.Drawing.Point(3, 275);
-      this.lbl3HurufMandarin.Name = "lbl3HurufMandarin";
-      this.lbl3HurufMandarin.Size = new System.Drawing.Size(169, 55);
-      this.lbl3HurufMandarin.TabIndex = 10;
-      this.lbl3HurufMandarin.Text = "Huruf Mandarin";
-      this.lbl3HurufMandarin.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-      // 
-      // tableLayoutPanel2
-      // 
-      this.tableLayoutPanel2.ColumnCount = 2;
-      this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 80F));
-      this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-      this.tableLayoutPanel2.Controls.Add(this.btn3Mandarin, 0, 0);
-      this.tableLayoutPanel2.Controls.Add(this.txt3HurufMandarin, 0, 0);
-      this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-      this.tableLayoutPanel2.Location = new System.Drawing.Point(178, 278);
-      this.tableLayoutPanel2.Name = "tableLayoutPanel2";
-      this.tableLayoutPanel2.RowCount = 1;
-      this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-      this.tableLayoutPanel2.Size = new System.Drawing.Size(405, 49);
-      this.tableLayoutPanel2.TabIndex = 11;
-      // 
-      // txt3HurufMandarin
-      // 
-      this.txt3HurufMandarin.Dock = System.Windows.Forms.DockStyle.Fill;
-      this.txt3HurufMandarin.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      this.txt3HurufMandarin.Location = new System.Drawing.Point(3, 3);
-      this.txt3HurufMandarin.Name = "txt3HurufMandarin";
-      this.txt3HurufMandarin.Size = new System.Drawing.Size(318, 44);
-      this.txt3HurufMandarin.TabIndex = 10;
-      this.txt3HurufMandarin.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txt3HurufMandarin_KeyDown);
+      this.tableLayoutPanel3.ColumnCount = 2;
+      this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 80F));
+      this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+      this.tableLayoutPanel3.Controls.Add(this.btn3Mandarin, 0, 0);
+      this.tableLayoutPanel3.Controls.Add(this.txt3KodeMandarin, 0, 0);
+      this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
+      this.tableLayoutPanel3.Location = new System.Drawing.Point(175, 220);
+      this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(0);
+      this.tableLayoutPanel3.Name = "tableLayoutPanel3";
+      this.tableLayoutPanel3.Padding = new System.Windows.Forms.Padding(0, 0, 0, 5);
+      this.tableLayoutPanel3.RowCount = 1;
+      this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+      this.tableLayoutPanel3.Size = new System.Drawing.Size(411, 55);
+      this.tableLayoutPanel3.TabIndex = 9;
       // 
       // btn3Mandarin
       // 
       this.btn3Mandarin.Dock = System.Windows.Forms.DockStyle.Fill;
       this.btn3Mandarin.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      this.btn3Mandarin.Location = new System.Drawing.Point(327, 3);
+      this.btn3Mandarin.Location = new System.Drawing.Point(331, 3);
       this.btn3Mandarin.Name = "btn3Mandarin";
-      this.btn3Mandarin.Size = new System.Drawing.Size(75, 43);
+      this.btn3Mandarin.Size = new System.Drawing.Size(77, 44);
       this.btn3Mandarin.TabIndex = 11;
       this.btn3Mandarin.Text = "Konversi";
       this.btn3Mandarin.UseVisualStyleBackColor = true;
       this.btn3Mandarin.Click += new System.EventHandler(this.btn3Mandarin_Click);
       // 
-      // lbl3Cetak
+      // txt3KodeMandarin
       // 
-      this.lbl3Cetak.AutoSize = true;
-      this.lbl3Cetak.Dock = System.Windows.Forms.DockStyle.Fill;
-      this.lbl3Cetak.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      this.lbl3Cetak.Location = new System.Drawing.Point(3, 330);
-      this.lbl3Cetak.Name = "lbl3Cetak";
-      this.lbl3Cetak.Size = new System.Drawing.Size(169, 55);
-      this.lbl3Cetak.TabIndex = 12;
-      this.lbl3Cetak.Text = "Jumlah Cetak";
-      this.lbl3Cetak.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-      // 
-      // num3Cetak
-      // 
-      this.num3Cetak.Dock = System.Windows.Forms.DockStyle.Fill;
-      this.num3Cetak.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      this.num3Cetak.Location = new System.Drawing.Point(178, 333);
-      this.num3Cetak.Name = "num3Cetak";
-      this.num3Cetak.Size = new System.Drawing.Size(405, 44);
-      this.num3Cetak.TabIndex = 14;
-      this.num3Cetak.KeyDown += new System.Windows.Forms.KeyEventHandler(this.num3Cetak_KeyDown);
+      this.txt3KodeMandarin.Dock = System.Windows.Forms.DockStyle.Fill;
+      this.txt3KodeMandarin.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+      this.txt3KodeMandarin.Location = new System.Drawing.Point(3, 3);
+      this.txt3KodeMandarin.Name = "txt3KodeMandarin";
+      this.txt3KodeMandarin.Size = new System.Drawing.Size(322, 44);
+      this.txt3KodeMandarin.TabIndex = 10;
+      this.txt3KodeMandarin.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txt3KodeMandarin_KeyDown);
       // 
       // tblLayoutCetak3
       // 
@@ -692,6 +688,14 @@
       this.btn3Reset.UseVisualStyleBackColor = true;
       this.btn3Reset.Click += new System.EventHandler(this.btn3Reset_Click);
       // 
+      // panel1
+      // 
+      this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
+      this.panel1.Location = new System.Drawing.Point(0, 591);
+      this.panel1.Name = "panel1";
+      this.panel1.Size = new System.Drawing.Size(1184, 28);
+      this.panel1.TabIndex = 2;
+      // 
       // frmMain
       // 
       this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -711,15 +715,15 @@
       this.tblLayoutMain.PerformLayout();
       this.tblLayout2.ResumeLayout(false);
       this.tblLayout2.PerformLayout();
-      this.tbl2Mandarin.ResumeLayout(false);
-      this.tbl2Mandarin.PerformLayout();
       ((System.ComponentModel.ISupportInitialize)(this.num2Cetak)).EndInit();
+      this.tableLayoutPanel1.ResumeLayout(false);
+      this.tableLayoutPanel1.PerformLayout();
       this.tblLayoutCetak2.ResumeLayout(false);
       this.tblLayout3.ResumeLayout(false);
       this.tblLayout3.PerformLayout();
-      this.tableLayoutPanel2.ResumeLayout(false);
-      this.tableLayoutPanel2.PerformLayout();
       ((System.ComponentModel.ISupportInitialize)(this.num3Cetak)).EndInit();
+      this.tableLayoutPanel3.ResumeLayout(false);
+      this.tableLayoutPanel3.PerformLayout();
       this.tblLayoutCetak3.ResumeLayout(false);
       this.ResumeLayout(false);
 
@@ -742,20 +746,15 @@
     private System.Windows.Forms.Label lbl2KodeJual;
     private System.Windows.Forms.TextBox txt2KodeJual;
     private System.Windows.Forms.Label lbl2KodeMandarin;
-    private System.Windows.Forms.TextBox txt2KodeMandarin;
     private System.Windows.Forms.Panel panel1;
     private System.Windows.Forms.TableLayoutPanel tblLayoutCetak2;
     private System.Windows.Forms.Label lbl2HurufMandarin;
-    private System.Windows.Forms.TableLayoutPanel tbl2Mandarin;
-    private System.Windows.Forms.TextBox txt2HurufMandarin;
-    private System.Windows.Forms.Button btn2Mandarin;
     private System.Windows.Forms.Label lbl2Cetak;
     private System.Windows.Forms.NumericUpDown num2Cetak;
     private System.Windows.Forms.Button btn2Cetak;
     private System.Windows.Forms.Button btn2Reset;
     private System.Windows.Forms.TableLayoutPanel tblLayout3;
     private System.Windows.Forms.Label lblTitle3;
-    private System.Windows.Forms.TextBox txt3KodeMandarin;
     private System.Windows.Forms.Label lbl3KodeMandarin;
     private System.Windows.Forms.TextBox txt3KodeJual;
     private System.Windows.Forms.Label lbl3KodeJual;
@@ -766,14 +765,19 @@
     private System.Windows.Forms.Label lbl3AsalBarang;
     private System.Windows.Forms.TextBox txt3AsalBarang;
     private System.Windows.Forms.Label lbl3HurufMandarin;
-    private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
-    private System.Windows.Forms.TextBox txt3HurufMandarin;
     private System.Windows.Forms.NumericUpDown num3Cetak;
     private System.Windows.Forms.Label lbl3Cetak;
-    private System.Windows.Forms.Button btn3Mandarin;
     private System.Windows.Forms.TableLayoutPanel tblLayoutCetak3;
     private System.Windows.Forms.Button btn3Cetak;
     private System.Windows.Forms.Button btn3Reset;
+    private System.Windows.Forms.TextBox txt2HurufMandarin;
+    private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+    private System.Windows.Forms.Button btn2Mandarin;
+    private System.Windows.Forms.TextBox txt2KodeMandarin;
+    private System.Windows.Forms.TextBox txt3HurufMandarin;
+    private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
+    private System.Windows.Forms.Button btn3Mandarin;
+    private System.Windows.Forms.TextBox txt3KodeMandarin;
   }
 }
 
